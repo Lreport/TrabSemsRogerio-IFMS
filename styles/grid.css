@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #161b22;
+}
+.header{
+    background-color: #0d1117;
+    color: #ecf2f8;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 200%;
+}
+.subheader{
+    color: #ecf2f8;
+    padding: 20px;
+    text-align: center;
+    font-size: 120%;
+}
+#p1, #p2, #p3, #p4, #p5, #p6{
+    text-align: center;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+.card1, .card2, .card3{
+    background-color: #1e2124;
+    color: #ecf2f8;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+}
+.card1{
+    box-shadow: 0 0 10px #8D0000;
+}
+.card2{
+    box-shadow: 0 0 10px #000B8D;
+}
+.card3{
+    box-shadow: 0 0 10px #00A19B;
+}
+.card1 img, .card2 img, .card3 img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+button{
+    background-color: #161b22;
+    color: #ecf2f8;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.footer{
+    text-align: center;
+    margin-top: 1%;
+}
+button{
+    text-align: center;
+    color: #ecf2f8;
+    background-color: #0d1117;
+    border-radius: 10px;
+    padding: 1%;
+}
+button:hover{
+    color: #161b22;
+    background-color: #ecf2f8;
+}
+@media (max-width: 768px) {
+    .header {
+        font-size: 150%;
+        padding: 15px;
+    }
+    .subheader {
+        font-size: 100%;
+        padding: 15px;
+    }
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+        padding: 15px;
+    }
+    .card1, .card2, .card3 {
+        padding: 15px;
+    }
+    button {
+        padding: 8px 16px;
+    }
+}
+@media (max-width: 480px) {
+    .header {
+        font-size: 120%;
+        padding: 10px;
+    }
+    .subheader {
+        font-size: 90%;
+        padding: 10px;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+    .card1, .card2, .card3 {
+        padding: 10px;
+    }
+    button {
+        padding: 6px 12px;
+    }
+}
